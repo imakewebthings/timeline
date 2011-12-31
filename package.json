@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "https://github.com/imakewebthings/timeline.git"
+    "url": "https://github.com/imakewebthings/timeline.git"
   },
   "bugs": "https://github.com/imakewebthings/timeline/issues",
   "licenses": [
