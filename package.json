@@ -1,0 +1,11 @@
+{
+  "name": "timeline",
+  "author": "Caleb Troughton",
+  "version": "0.0.1",
+  "main": "./lib/timeline.js",
+  "devDependencies": {
+    "coffee-script": "1.2.0",
+    "mocha": "0.7.0",
+    "should": "0.4.2"
+  }
+}
