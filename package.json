@@ -1,11 +1,27 @@
 {
   "name": "timeline",
-  "author": "Caleb Troughton",
+  "description": "Generic event timeline for node or the browser",
+  "author": "Caleb Troughton <caleb@imakewebthings.com> (http://imakewebthings.com)",
   "version": "0.0.1",
   "main": "./lib/timeline.js",
   "devDependencies": {
     "coffee-script": "1.2.0",
     "mocha": "0.7.0",
     "should": "0.4.2"
-  }
+  },
+  "keywords": ["time", "events"],
+  "engines": {
+    "node": ">= 0.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "https://github.com/imakewebthings/timeline.git"
+  },
+  "bugs": "https://github.com/imakewebthings/timeline/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/imakewebthings/timeline/master/MIT-license.txt"
+    }
+  ]
 }

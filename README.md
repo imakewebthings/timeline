@@ -6,6 +6,10 @@ Node:
 npm install timeline
 ```
 
+```
+Timeline = require 'timeline'
+```
+
 Browser:
 
 ```
@@ -91,7 +95,7 @@ All getters return the expected value. Every other method returns the Timeline o
 
 ## Events
 
-Timelines also have three more methods:
+Timelines also have three methods for events:
 
 <dl>
   <dt>on(event, callback)</dt>
@@ -102,7 +106,7 @@ Timelines also have three more methods:
   <dd>Triggers all callbacks bound to the event. Any extra parameters are passed as parameters to the callbacks.</dd>
 </dl>
 
-Timelines emit the following events:
+Timelines emit these events:
 
 <dl>
   <dt>play</dt>
@@ -115,17 +119,27 @@ Timelines emit the following events:
   <dd>Triggered every `frequency` milliseconds while a timeline is playing, and once every time `position(ms)` is used, regardless of whether the timeline is playing or not.</dd>
 </dl>
 
+```
+timeline = new Timeline length:4000
+timeline.on 'tick', ->
+  $('.current-time').text timeline.position()
+```
+
 ## Other Properties
 
 <dl>
   <dt>playing</dt>
-  <dd>True if the timeline is playing.</dd>
+  <dd>True if the timeline is playing, false otherwise.</dd>
 </dl>
 
 ## Development + Tests
 
-Tests are written in CoffeeScript using Mocha and should.js. To run them:
+Tests are written in CoffeeScript using [Mocha](http://visionmedia.github.com/mocha/) and [should.js](https://github.com/visionmedia/should.js). To run them:
 
 1. Clone the repository
 2. `npm install`
 3. `make test`
+
+## License
+
+[MIT](https://raw.github.com/imakewebthings/timeline/master/MIT-license.txt).
