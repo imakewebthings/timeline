@@ -2,17 +2,17 @@
 
 Node:
 
-```
+```sh
 npm install timeline
 ```
 
-```
+```coffee
 Timeline = require 'timeline'
 ```
 
 Browser:
 
-```
+```html
 <script src="/path/to/timeline.js"></script>
 ```
 
@@ -20,13 +20,13 @@ Browser:
 
 To create a timeline using the default options:
 
-```
+```coffee
 timeline = new Timeline
 ```
 
 You can also pass in options:
 
-```
+```coffee
 timeline = new Timeline
   length: 5000
   frequency: 250
@@ -34,7 +34,7 @@ timeline = new Timeline
 
 The defaults are:
 
-```
+```coffee
 length: 0
 frequency: 100
 ```
@@ -47,14 +47,14 @@ A Timeline object contains an Array of markers. Markers are objects with three p
 
 <dl>
   <dt>time</dt>
-  <dd>The time in milliseconds on the timeline where the events should fire</dd>
+  <dd>The time in milliseconds on the timeline where the marker should live.</dd>
   <dt>forward</dt>
   <dd>The function to execute when moving forward in time through the marker.</dd>
   <dt>backward</dt>
   <dd>The function to execute when moving backward in time through the marker.</dd>
 </dl>
 
-```
+```coffee
 timeline.markers.push
   time: 500
   forward: ->
@@ -119,7 +119,7 @@ Timelines emit these events:
   <dd>Triggered every `frequency` milliseconds while a timeline is playing, and once every time `position(ms)` is used, regardless of whether the timeline is playing or not.</dd>
 </dl>
 
-```
+```coffee
 timeline = new Timeline length:4000
 timeline.on 'tick', ->
   $('.current-time').text timeline.position()
