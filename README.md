@@ -78,19 +78,19 @@ All getters return the expected value. Every other method returns the Timeline o
   <dd>Returns the length of the timeline.</dd>
   
   <dt>length(ms)</dt>
-  <dd>Sets the length of the timeline to `ms`.</dd>
+  <dd>Sets the length of the timeline to <code>ms</code>.</dd>
   
   <dt>frequency()</dt>
   <dd>Returns the frequency.</dd>
   
   <dt>frequency(ms)</dt>
-  <dd>Sets the frequency to `ms`.</dd>
+  <dd>Sets the frequency to <code>ms</code>.</dd>
   
   <dt>position()</dt>
   <dd>Returns the current position of the timeline.</dd>
   
   <dt>position(ms)</dt>
-  <dd>Jumps to the new position at `ms`.</dd>
+  <dd>Jumps to the new position at <code>ms</code>.</dd>
 </dl>
 
 ## Events
@@ -99,7 +99,7 @@ Timelines also have three methods for events:
 
 <dl>
   <dt>on(event, callback)</dt>
-  <dd>Binds the `callback` function to the event.</dd>
+  <dd>Binds the <code>callback</code> function to the event.</dd>
   <dt>off(event[, callback])</dt>
   <dd>Unbinds event callbacks.  If a callback is passed in as the second argument, only that callback is unbound. If there is no second argument, all callbacks for that event are unbound.</dd>
   <dt>trigger(event, args...)</dt>
@@ -116,7 +116,7 @@ Timelines emit these events:
   <dt>end</dt>
   <dd>Triggered if the timeline hits the end.</dd>
   <dt>tick</dt>
-  <dd>Triggered every `frequency` milliseconds while a timeline is playing, and once every time `position(ms)` is used, regardless of whether the timeline is playing or not.</dd>
+  <dd>Triggered every <code>frequency</code> milliseconds while a timeline is playing, and once every time <code>position(ms)</code> is used, regardless of whether the timeline is playing or not.</dd>
 </dl>
 
 ```coffee
