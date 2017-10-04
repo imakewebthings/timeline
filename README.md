@@ -134,7 +134,7 @@ timeline.on 'tick', ->
 
 ## Development + Tests
 
-Tests are written in CoffeeScript using [Mocha](http://visionmedia.github.com/mocha/) and [should.js](https://github.com/visionmedia/should.js). To run them:
+Tests are written in CoffeeScript using [Mocha](http://mochajs.org/) and [should.js](https://github.com/visionmedia/should.js). To run them:
 
 1. Clone the repository
 2. `npm install`
